@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Portfolios": {
+    "PortfoliosV1cm": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portfolios",
+            "outputPath": "dist/PortfoliosV1cm",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Portfolios:build:production"
+              "buildTarget": "PortfoliosV1cm:build:production"
             },
             "development": {
-              "buildTarget": "Portfolios:build:development"
+              "buildTarget": "PortfoliosV1cm:build:development"
             }
           },
           "defaultConfiguration": "development"
