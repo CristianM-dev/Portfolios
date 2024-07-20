@@ -1,0 +1,141 @@
+.ativo{
+    font-weight: bold;
+}
+
+i{
+    cursor: pointer;
+}
+
+.logro{
+    font-size: small;
+}
+
+#Bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: .01;
+
+    pointer-events: none;
+}
+
+:host{
+
+    display: flex;
+    padding: 64px 32px;
+    max-width: 1200px;
+    height: 100dvh ;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 32px;
+    flex-wrap: wrap;
+
+    color: white;
+
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+aside{
+    flex: 1 1 200px;
+    height: 100%;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div#ConteudoEsquerdo{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    div#NomeETitulo{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex: 1;
+    }
+
+    div#Menu{
+        flex: 1;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#Contacto{
+        display: flex;
+        gap: 16px;
+    }
+}
+
+main{
+    flex: 2 1 300px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 16px;
+    scroll-snap-type: y mandatory;
+
+    section{
+        scroll-snap-stop: always;
+        scroll-snap-align: center;
+        margin-bottom: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: justify;
+       
+        flex: 1 100%;
+    }
+
+    #ImgSobreMim{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    
+        display: flex;
+        justify-content: flex-end;
+        
+        #Laptop{
+            width: 100%;
+            object-fit: cover;
+        }
+        #Icon{
+            position: absolute;
+            top: 5px;
+            height: 200px;
+            filter: drop-shadow();
+        }
+
+    }
+
+    .experiencia{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+        justify-content: space-between;
+        
+        .dado{
+            display: flex;
+            flex-direction: column;
+            h2{
+                margin-left: 12px;
+            }
+        }
+    }
+
+
+}
+
+.flex{
+    display: flex;
+    gap: 12px;
+}
