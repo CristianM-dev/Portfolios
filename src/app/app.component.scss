@@ -3,6 +3,7 @@
     margin-left: 20px;
 
     cursor: auto;
+    border-bottom: solid 1px white;
 }
 
 a{
@@ -16,7 +17,7 @@ a{
             transition: all .3s;
 
             &:hover:not(.ativo){
-                scale: 1.1;
+                
                 font-size: 20px;
             }
 
@@ -191,6 +192,7 @@ main{
         .dado{
             display: flex;
             flex-direction: column;
+            gap: 4px;
             h2{
                 margin-left: 12px;
             }
@@ -202,10 +204,25 @@ main{
 
 #TechWrapper{
     display: flex;
+    gap: 12px;
+    >div{
+        background-color: rgba(255, 255, 255, 0.137);
+        border-radius: 4px;
+        padding: 4px;
 
+        transition: background-color .5s;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.205);
+        }
+    }
 }
 
-.flex{
+.experienciaTitulo{
     display: flex;
     gap: 12px;
+    align-items: center;
+    
+    img{
+        width: 60%;
+    }
 }

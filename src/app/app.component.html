@@ -7,7 +7,7 @@
         <h1>Cristian Marin</h1>
         <h3>Desenvolvedor Fullstack</h3>
       </div>
-      <p>Sou um amante da tecnologia e da inovação, dedicado a aprender, ensinar e criar.</p>
+      <p>Sou um amante da tecnologia e da inovação, dedicado a aprender e criar.</p>
     </div>
     <div id="Menu">
       <a (click)="ScrollTo('SobreMim')" [ngClass]="{'ativo': viewAtivo == Views.SobreMim}">Sobre mim</a>
@@ -17,9 +17,10 @@
   </div>
   <div></div>
   <div id="Contacto">
-    <a href="https://www.linkedin.com/in/cristian-marin-761777315/"><img src="linkedin-icon.svg"><span>Linkedin</span></a>
-    <a href="mailto:cristianm.px1995@gmail.com"><img src="email-icon.svg"><span>Email</span></a>
-    <a href="https://wa.me/5541996403942?text=Ol%C3%A1%2C%20gostei%20do%20seu%20portf%C3%B3lio."><img src="whatsapp-icon.svg"><span>Whatsapp</span></a>
+    <a href="https://www.linkedin.com/in/cristian-marin-761777315/" target="_blank"><img src="linkedin-icon.svg"><span>Linkedin</span></a>
+    <a href="mailto:cristianm.px1995@gmail.com" target="_blank"><img src="email-icon.svg"><span>Email</span></a>
+    <a href="https://wa.me/5541996403942?text=Ol%C3%A1%2C%20gostei%20do%20seu%20portf%C3%B3lio." target="_blank"><img src="whatsapp-icon.svg"><span>Whatsapp</span></a>
+    <a href="https://github.com/CristianM-dev/PortfoliosV1Cm" target="_blank"><img src="github-icon.svg"><span>Github</span></a>
   </div>
 </aside>
 <main (scroll)="ScrollListener($event)">
@@ -37,7 +38,7 @@
   <section id="Experiencia">
     <h4>Experiência Profissional</h4>
     <div class="experiencia" >
-      <div class="flex">
+      <div class="experienciaTitulo">
         <div class="dado">
           <div>2023 - Agora</div>
           <div><img src="logo-pier.png"></div>
@@ -75,8 +76,8 @@
         <div id="LogrosWrapper">
           <div class="logro">Sistema web de importação de arquivos csv com campos, filtros e validadores modulares</div>
           <div class="logro">Sistema web de gestão de permissoes e autorizações para usuarios</div>
-          <div class="logro">Aplicativo mobile multiplataforma para clientes</div>
-          <div class="logro">Aplicativo desktop multiplataforma para sincronizar pastas com a nuvem</div>
+          <div class="logro">Aplicativo mobile multiplataforma(android, ios) para clientes</div>
+          <div class="logro">Aplicativo desktop multiplataforma(windows, macos) para sincronizar pastas com a nuvem</div>
           <div class="logro">Forum de sugestões web com sistema de votaçao para melhorias</div>
         </div>
       </div>
