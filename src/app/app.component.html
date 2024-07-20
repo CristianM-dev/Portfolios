@@ -10,16 +10,16 @@
       <p>Sou um amante da tecnologia e da inovação, dedicado a aprender, ensinar e criar.</p>
     </div>
     <div id="Menu">
-      <i (click)="ScrollTo('SobreMim')" [ngClass]="{'ativo': viewAtivo == Views.SobreMim}">Sobre mim</i>
-      <i (click)="ScrollTo('Experiencia')" [ngClass]="{'ativo':viewAtivo == Views.Experiencia}">Experiência Profissional</i>
-      <i (click)="ScrollTo('Portfolios')" [ngClass]="{'ativo':viewAtivo == Views.Portfolios}">Portfolios</i>
+      <a (click)="ScrollTo('SobreMim')" [ngClass]="{'ativo': viewAtivo == Views.SobreMim}">Sobre mim</a>
+      <a (click)="ScrollTo('Experiencia')" [ngClass]="{'ativo':viewAtivo == Views.Experiencia}">Experiência Profissional</a>
+      <a (click)="ScrollTo('Portfolios')" [ngClass]="{'ativo':viewAtivo == Views.Portfolios}">Portfolios</a>
     </div>
   </div>
   <div></div>
   <div id="Contacto">
-    <i>linkedin</i>
-    <i>email</i>
-    <i>Whatsapp</i>
+    <a href="https://www.linkedin.com/in/cristian-marin-761777315/"><img src="linkedin-icon.svg"><span>Linkedin</span></a>
+    <a href="mailto:cristianm.px1995@gmail.com"><img src="email-icon.svg"><span>Email</span></a>
+    <a href="https://wa.me/5541996403942?text=Ol%C3%A1%2C%20gostei%20do%20seu%20portf%C3%B3lio."><img src="whatsapp-icon.svg"><span>Whatsapp</span></a>
   </div>
 </aside>
 <main (scroll)="ScrollListener($event)">
@@ -59,7 +59,7 @@
       </div>
       <div>
         <h4>Techs usadas:</h4>
-        <div class="flex">
+        <div id="TechWrapper">
           <div>Angular</div>
           <div>Dotnet</div>
           <div>Typescript</div>
@@ -72,12 +72,12 @@
       </div>
       <div>
         <h4>Logros destacados</h4>
-        <div>
-          <div class="logro">Sistema de importação de arquivos csv com campos, filtros e validadores modulares</div>
-          <div class="logro">Sistema de gestão de permissoes e autorizações para usuarios</div>
+        <div id="LogrosWrapper">
+          <div class="logro">Sistema web de importação de arquivos csv com campos, filtros e validadores modulares</div>
+          <div class="logro">Sistema web de gestão de permissoes e autorizações para usuarios</div>
           <div class="logro">Aplicativo mobile multiplataforma para clientes</div>
           <div class="logro">Aplicativo desktop multiplataforma para sincronizar pastas com a nuvem</div>
-          <div class="logro">Forum de sugestões com sistema de votaçao para melhorias</div>
+          <div class="logro">Forum de sugestões web com sistema de votaçao para melhorias</div>
         </div>
       </div>
 
