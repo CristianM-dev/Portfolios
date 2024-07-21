@@ -1,26 +1,72 @@
-.ativo{
-    font-size: 20px;
-    margin-left: 20px;
+@media screen and (Width >= 684px) {
+    
+    .ativo{
+    
+        font-size: 20px;
+        margin-left: 20px;
+    
+        cursor: auto;
+        border-bottom: solid 1px white;
+        color: white;
+    }
+}
 
-    cursor: auto;
-    border-bottom: solid 1px white;
+@media screen and (width < 684px) {
+    #ConteudoEsquerdo{
+        h1{
+            font-size: 32px;
+        }
+        h3{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    #Experiencia{
+        div{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+
+    .tituloExperiencia{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    section p{
+        font-size: 16px;
+    }
 }
 
 a{
+
+    color: rgba(255, 255, 255, 0.685);
     user-select: none;
     cursor: pointer;
 }
 
 #Menu{
     a{
-
             transition: all .3s;
 
-            &:hover:not(.ativo){
+            @media screen and (width >= 684px){
                 
-                font-size: 20px;
+                &:hover:not(.ativo){    
+                    font-size: 20px;
+                }
+                
             }
+    }
 
+    @media screen and (width < 684px) {
+        font-size: 24px;
     }
 }
 
@@ -43,14 +89,19 @@ a{
             opacity: 0;
             transition: all 0.5s;
         }
-        &:has(img:hover) span{
-            width: 80px;
-            opacity: 1;
+        @media screen and (Width >= 684px) {
+            &:has(img:hover) span{
+                width: 80px;
+                opacity: 1;
+            }
+            
         }
     }
 
     img{
         height: 40px;
+
+
     }
 }
 
@@ -92,14 +143,27 @@ a{
     max-width: 1200px;
     height: 100dvh ;
     box-sizing: border-box;
-    overflow: hidden;
     gap: 32px;
+    
     flex-wrap: wrap;
-
+    
     color: white;
-
+    
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    overflow: hidden;
 
+    @media screen and (Width < 683px) {
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        gap: 50px;
+
+        >aside,>main{
+            scroll-snap-align: center;
+            scroll-behavior: smooth;
+            scroll-snap-stop: always;
+        }
+    }
 }
 
 aside{
@@ -143,14 +207,15 @@ main{
     overflow-y: auto;
     overflow-x: hidden;
     padding: 16px;
+
     scroll-snap-type: y mandatory;
 
     background-color: rgba(0, 0, 0, 0.151);
 
     section{
-        scroll-snap-stop: always;
+        
         scroll-snap-align: center;
-        margin-bottom: 16px;
+        margin: 32px 0px;
         height: 100%;
         display: flex;
         flex-direction: column;
