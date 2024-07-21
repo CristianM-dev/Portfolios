@@ -297,7 +297,11 @@ main{
     gap: 12px;
     align-items: center;
     
+    .logoEmpresaWrapper{
+        width: 200px;
+    }
+
     img{
-        width: 60%;
+        width: 100%;
     }
 }
