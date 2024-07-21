@@ -26,11 +26,12 @@ export class AppComponent {
     else this.viewAtivo = Views.SobreMim
   }
 
-  ScrollTo(id:string){
-    let el = document.getElementById(id);
-    if(el){
-      el.scrollIntoView({behavior: 'smooth'});
+  ScrollTo(view:number){
+    let el = document.getElementById('MainWrapper');
+    if(window.innerWidth < 684){
+      el?.scrollIntoView();
     }
+    el!.scrollTop = el!.clientHeight * view;
   }
 }
 

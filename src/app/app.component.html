@@ -10,9 +10,9 @@
       <p>Sou um amante da tecnologia e da inovação, dedicado a aprender e criar.</p>
     </div>
     <div id="Menu">
-      <a (click)="ScrollTo('SobreMim')" [ngClass]="{'ativo': viewAtivo == Views.SobreMim}">Sobre mim</a>
-      <a (click)="ScrollTo('Experiencia')" [ngClass]="{'ativo':viewAtivo == Views.Experiencia}">Experiência Profissional</a>
-      <a (click)="ScrollTo('Portfolios')" [ngClass]="{'ativo':viewAtivo == Views.Portfolios}">Portfolios</a>
+      <a (click)="ScrollTo(Views.SobreMim)" [ngClass]="{'ativo': viewAtivo == Views.SobreMim}">Sobre mim</a>
+      <a (click)="ScrollTo(Views.Experiencia)" [ngClass]="{'ativo':viewAtivo == Views.Experiencia}">Experiência Profissional</a>
+      <a (click)="ScrollTo(Views.Portfolios)" [ngClass]="{'ativo':viewAtivo == Views.Portfolios}">Portfolios</a>
     </div>
   </div>
   <div></div>
@@ -23,7 +23,7 @@
     <a href="https://github.com/CristianM-dev/PortfoliosV1Cm" target="_blank"><img src="github-icon.svg"><span>Github</span></a>
   </div>
 </aside>
-<main (scroll)="ScrollListener($event)">
+<main (scroll)="ScrollListener($event)" id="MainWrapper">
   <section id="SobreMim"  >
     <h4>Sobre mim</h4>
     <p>Sou um estudante de <b>Engenharia de Software</b> no Brasil, apaixonado por tecnologia e desenvolvimento de experiências de  usuário confortáveis, intuitivas e eficientes. </p>

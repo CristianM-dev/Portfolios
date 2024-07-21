@@ -218,11 +218,12 @@ main{
 
     section{
         
-        scroll-snap-align: center;
+        scroll-snap-align: start;
         margin: 32px 0px;
         height: 100%;
         display: flex;
         flex-direction: column;
+        padding: 16px 0px;
         gap: 12px;
         text-align: justify;
        
