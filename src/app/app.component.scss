@@ -116,12 +116,16 @@ a{
     font-size: 16px;
     transition: all .5s;
     background-color: rgba(255, 255, 255, 0);
-    height: 20px;
+
     padding-left: 0px;
     &:hover{
     
         padding-left: 8px;
         background-color: rgba(255, 255, 255, 0.137);
+    }
+
+    @media screen and (width < 684px) {
+        font-size: 8px;
     }
 }
 
@@ -251,7 +255,7 @@ main{
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 32px;
+        gap: 16px;
         justify-content: space-between;
         
         .dado{
@@ -266,10 +270,16 @@ main{
 
 
 }
+#Techs{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
 
 #TechWrapper{
     display: flex;
-    gap: 12px;
+    gap: 6px;
+    flex-wrap: wrap;
     >div{
         background-color: rgba(255, 255, 255, 0.137);
         border-radius: 4px;
