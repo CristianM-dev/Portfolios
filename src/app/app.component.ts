@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Renderer2 } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-import {  } from 'express';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +10,8 @@ import {  } from 'express';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  constructor(private router: Router){}
 
   viewAtivo:number = Views.SobreMim;
   Views = Views;
@@ -32,6 +33,10 @@ export class AppComponent {
       el?.scrollIntoView();
     }
     el!.scrollTop = el!.clientHeight * view;
+  }
+
+  NavigateTo(site:string){
+    this.router.navigateByUrl(site);
   }
 }
 
